@@ -75,7 +75,6 @@ from `results/`.
 
 ```
 notebooks/     the three notebooks
-tools/         generator for them -- edit this, not the .ipynb
 spx/
   soft_adjoint.py   layer-wise soft adjoints (paper, Appendix A)
   selectors.py      one-hot, Fisher-Rao, margin
@@ -90,8 +89,6 @@ spx/
 scripts/       08 Entropy-Flow diagnostics, 09 attacks, 10 metric unification,
                11 sharpness, plus 02/04/06/07
 results/       n = 200 tables, ablation sweeps, unification, sharpness
-docs/          FINDINGS.md (results), DESIGN_NOTES.md (reasoning)
-tests/         pytest, no data needed
 ```
 
 ## Where things stand
