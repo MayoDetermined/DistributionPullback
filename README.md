@@ -66,7 +66,8 @@ ResNet-50 weights come from torchvision on first use.
 
 The notebooks are all CPU-friendly. The expensive parts of the project (the
 Quantus suite, the explanation attacks) aren't in them; their numbers are read
-from `results/`.
+from `results/`. [`METRICS.md`](METRICS.md) has the table and says what the
+columns are.
 
 ## Layout
 
@@ -82,10 +83,11 @@ spx/
   sharpness.py      concentration measures + Pareto frontier
   expl_attack.py    prediction-preserving attacks on the explanation
   metrics.py        Quantus suite with the paper's Sec. F.1 deviations
-  models.py, data.py, viz.py, dossier.py
+  models.py, data.py, viz.py, nbtools.py
 scripts/       08 Entropy-Flow diagnostics, 09 attacks, 10 metric unification,
                11 sharpness, plus 02/04/06/07
 results/       n = 200 tables, ablation sweeps, unification, sharpness
+METRICS.md     the n = 200 table and what the columns mean
 ```
 
 ## Where things stand
