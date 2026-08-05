@@ -1,0 +1,9 @@
+method,infid_target_logit,infid_explained_score,ratio
+DoublePullback,2.034,1.855,0.9119
+PullbackAscent,104000.0,104900.0,1.008
+DistributionAscent,122400.0,138800.0,1.134
+MarginAscent,100500.0,112100.0,1.115
+MarginPullback,1.816,1.618,0.8911
+SoftPullback,2.014,1.997,0.9917
+Gradient,5.307,5.285,0.9959
+DistributionPullback,2.213,3.352,1.515

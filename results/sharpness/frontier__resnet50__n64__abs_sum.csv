@@ -1,0 +1,331 @@
+sharp_metric,faith_metric,method,sharpness,faithfulness,dominated_by,on_frontier
+gini,FaithfulnessCorrelation,GuidedGradCam,0.8312250375747681,0.009,[],True
+gini,FaithfulnessCorrelation,DeepLift,0.5808241367340088,-0.006,['GuidedGradCam'],False
+gini,FaithfulnessCorrelation,Deconvolution,0.48561030626296997,-0.004,['GuidedGradCam'],False
+gini,FaithfulnessCorrelation,MarginPullback,0.4680464267730713,0.058,[],True
+gini,FaithfulnessCorrelation,Saliency,0.4616459310054779,0.01,['MarginPullback'],False
+gini,FaithfulnessCorrelation,Gradient,0.4616459310054779,0.014,['MarginPullback'],False
+gini,FaithfulnessCorrelation,DistributionPullback,0.4559704661369324,0.073,[],True
+gini,FaithfulnessCorrelation,SoftPullback,0.45538753271102905,0.072,['DistributionPullback'],False
+gini,FaithfulnessCorrelation,DoublePullback,0.4487224817276001,0.053,"['DistributionPullback', 'MarginPullback', 'SoftPullback']",False
+gini,FaithfulnessCorrelation,MarginAscent,0.42662233114242554,0.038,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+gini,FaithfulnessCorrelation,PullbackAscent,0.4216865003108978,0.045,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+gini,MonotonicityCorrelation,GuidedGradCam,0.8312250375747681,0.402,[],True
+gini,MonotonicityCorrelation,DeepLift,0.5808241367340088,0.305,['GuidedGradCam'],False
+gini,MonotonicityCorrelation,Deconvolution,0.48561030626296997,0.216,"['DeepLift', 'GuidedGradCam']",False
+gini,MonotonicityCorrelation,MarginPullback,0.4680464267730713,0.226,"['DeepLift', 'GuidedGradCam']",False
+gini,MonotonicityCorrelation,Saliency,0.4616459310054779,0.157,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+gini,MonotonicityCorrelation,Gradient,0.4616459310054779,0.157,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+gini,MonotonicityCorrelation,DistributionPullback,0.4559704661369324,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+gini,MonotonicityCorrelation,SoftPullback,0.45538753271102905,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+gini,MonotonicityCorrelation,DoublePullback,0.4487224817276001,0.207,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+gini,MonotonicityCorrelation,MarginAscent,0.42662233114242554,0.228,"['DeepLift', 'GuidedGradCam']",False
+gini,MonotonicityCorrelation,PullbackAscent,0.4216865003108978,0.234,"['DeepLift', 'GuidedGradCam']",False
+gini,FaithfulnessEstimate,GuidedGradCam,0.8312250375747681,0.072,[],True
+gini,FaithfulnessEstimate,DeepLift,0.5808241367340088,-0.152,['GuidedGradCam'],False
+gini,FaithfulnessEstimate,Deconvolution,0.48561030626296997,0.173,[],True
+gini,FaithfulnessEstimate,MarginPullback,0.4680464267730713,0.557,[],True
+gini,FaithfulnessEstimate,Saliency,0.4616459310054779,0.071,"['Deconvolution', 'GuidedGradCam', 'MarginPullback']",False
+gini,FaithfulnessEstimate,Gradient,0.4616459310054779,0.384,['MarginPullback'],False
+gini,FaithfulnessEstimate,DistributionPullback,0.4559704661369324,0.281,"['Gradient', 'MarginPullback']",False
+gini,FaithfulnessEstimate,SoftPullback,0.45538753271102905,0.515,['MarginPullback'],False
+gini,FaithfulnessEstimate,DoublePullback,0.4487224817276001,0.362,"['Gradient', 'MarginPullback', 'SoftPullback']",False
+gini,FaithfulnessEstimate,MarginAscent,0.42662233114242554,0.686,[],True
+gini,FaithfulnessEstimate,PullbackAscent,0.4216865003108978,0.629,['MarginAscent'],False
+gini,MaxSensitivity,GuidedGradCam,0.8312250375747681,0.189,[],True
+gini,MaxSensitivity,DeepLift,0.5808241367340088,0.692,['GuidedGradCam'],False
+gini,MaxSensitivity,Deconvolution,0.48561030626296997,0.181,[],True
+gini,MaxSensitivity,MarginPullback,0.4680464267730713,0.41,"['Deconvolution', 'GuidedGradCam']",False
+gini,MaxSensitivity,Saliency,0.4616459310054779,0.811,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+gini,MaxSensitivity,Gradient,0.4616459310054779,1.03,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+gini,MaxSensitivity,DistributionPullback,0.4559704661369324,0.411,"['Deconvolution', 'GuidedGradCam', 'MarginPullback']",False
+gini,MaxSensitivity,SoftPullback,0.45538753271102905,0.401,"['Deconvolution', 'GuidedGradCam']",False
+gini,MaxSensitivity,DoublePullback,0.4487224817276001,0.616,"['Deconvolution', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+gini,MaxSensitivity,MarginAscent,0.42662233114242554,1.052,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+gini,MaxSensitivity,PullbackAscent,0.4216865003108978,1.054,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+gini,RandomLogit,GuidedGradCam,0.8312250375747681,0.364,[],True
+gini,RandomLogit,DeepLift,0.5808241367340088,0.013,[],True
+gini,RandomLogit,Deconvolution,0.48561030626296997,1.0,"['DeepLift', 'GuidedGradCam']",False
+gini,RandomLogit,MarginPullback,0.4680464267730713,0.084,['DeepLift'],False
+gini,RandomLogit,Saliency,0.4616459310054779,0.338,"['DeepLift', 'MarginPullback']",False
+gini,RandomLogit,Gradient,0.4616459310054779,-0.026,[],True
+gini,RandomLogit,DistributionPullback,0.4559704661369324,-0.059,[],True
+gini,RandomLogit,SoftPullback,0.45538753271102905,-0.018,"['DistributionPullback', 'Gradient']",False
+gini,RandomLogit,DoublePullback,0.4487224817276001,0.006,"['DistributionPullback', 'Gradient', 'SoftPullback']",False
+gini,RandomLogit,MarginAscent,0.42662233114242554,0.022,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+gini,RandomLogit,PullbackAscent,0.4216865003108978,0.011,"['DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+spatial_entropy,FaithfulnessCorrelation,GuidedGradCam,0.8466022610664368,0.009,[],True
+spatial_entropy,FaithfulnessCorrelation,DeepLift,0.9401608109474182,-0.006,['GuidedGradCam'],False
+spatial_entropy,FaithfulnessCorrelation,Deconvolution,0.9628099203109741,-0.004,['GuidedGradCam'],False
+spatial_entropy,FaithfulnessCorrelation,MarginPullback,0.9632714986801147,0.058,[],True
+spatial_entropy,FaithfulnessCorrelation,Gradient,0.9649373292922974,0.014,['MarginPullback'],False
+spatial_entropy,FaithfulnessCorrelation,Saliency,0.9649373292922974,0.01,['MarginPullback'],False
+spatial_entropy,FaithfulnessCorrelation,DistributionPullback,0.9657719135284424,0.073,[],True
+spatial_entropy,FaithfulnessCorrelation,SoftPullback,0.9658064842224121,0.072,['DistributionPullback'],False
+spatial_entropy,FaithfulnessCorrelation,DoublePullback,0.9667124152183533,0.053,"['DistributionPullback', 'MarginPullback', 'SoftPullback']",False
+spatial_entropy,FaithfulnessCorrelation,MarginAscent,0.9710930585861206,0.038,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+spatial_entropy,FaithfulnessCorrelation,PullbackAscent,0.9718440771102905,0.045,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+spatial_entropy,MonotonicityCorrelation,GuidedGradCam,0.8466022610664368,0.402,[],True
+spatial_entropy,MonotonicityCorrelation,DeepLift,0.9401608109474182,0.305,['GuidedGradCam'],False
+spatial_entropy,MonotonicityCorrelation,Deconvolution,0.9628099203109741,0.216,"['DeepLift', 'GuidedGradCam']",False
+spatial_entropy,MonotonicityCorrelation,MarginPullback,0.9632714986801147,0.226,"['DeepLift', 'GuidedGradCam']",False
+spatial_entropy,MonotonicityCorrelation,Gradient,0.9649373292922974,0.157,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MonotonicityCorrelation,Saliency,0.9649373292922974,0.157,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MonotonicityCorrelation,DistributionPullback,0.9657719135284424,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MonotonicityCorrelation,SoftPullback,0.9658064842224121,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MonotonicityCorrelation,DoublePullback,0.9667124152183533,0.207,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+spatial_entropy,MonotonicityCorrelation,MarginAscent,0.9710930585861206,0.228,"['DeepLift', 'GuidedGradCam']",False
+spatial_entropy,MonotonicityCorrelation,PullbackAscent,0.9718440771102905,0.234,"['DeepLift', 'GuidedGradCam']",False
+spatial_entropy,FaithfulnessEstimate,GuidedGradCam,0.8466022610664368,0.072,[],True
+spatial_entropy,FaithfulnessEstimate,DeepLift,0.9401608109474182,-0.152,['GuidedGradCam'],False
+spatial_entropy,FaithfulnessEstimate,Deconvolution,0.9628099203109741,0.173,[],True
+spatial_entropy,FaithfulnessEstimate,MarginPullback,0.9632714986801147,0.557,[],True
+spatial_entropy,FaithfulnessEstimate,Gradient,0.9649373292922974,0.384,['MarginPullback'],False
+spatial_entropy,FaithfulnessEstimate,Saliency,0.9649373292922974,0.071,"['Deconvolution', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,FaithfulnessEstimate,DistributionPullback,0.9657719135284424,0.281,"['Gradient', 'MarginPullback']",False
+spatial_entropy,FaithfulnessEstimate,SoftPullback,0.9658064842224121,0.515,['MarginPullback'],False
+spatial_entropy,FaithfulnessEstimate,DoublePullback,0.9667124152183533,0.362,"['Gradient', 'MarginPullback', 'SoftPullback']",False
+spatial_entropy,FaithfulnessEstimate,MarginAscent,0.9710930585861206,0.686,[],True
+spatial_entropy,FaithfulnessEstimate,PullbackAscent,0.9718440771102905,0.629,['MarginAscent'],False
+spatial_entropy,MaxSensitivity,GuidedGradCam,0.8466022610664368,0.189,[],True
+spatial_entropy,MaxSensitivity,DeepLift,0.9401608109474182,0.692,['GuidedGradCam'],False
+spatial_entropy,MaxSensitivity,Deconvolution,0.9628099203109741,0.181,[],True
+spatial_entropy,MaxSensitivity,MarginPullback,0.9632714986801147,0.41,"['Deconvolution', 'GuidedGradCam']",False
+spatial_entropy,MaxSensitivity,Gradient,0.9649373292922974,1.03,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MaxSensitivity,Saliency,0.9649373292922974,0.811,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MaxSensitivity,DistributionPullback,0.9657719135284424,0.411,"['Deconvolution', 'GuidedGradCam', 'MarginPullback']",False
+spatial_entropy,MaxSensitivity,SoftPullback,0.9658064842224121,0.401,"['Deconvolution', 'GuidedGradCam']",False
+spatial_entropy,MaxSensitivity,DoublePullback,0.9667124152183533,0.616,"['Deconvolution', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+spatial_entropy,MaxSensitivity,MarginAscent,0.9710930585861206,1.052,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+spatial_entropy,MaxSensitivity,PullbackAscent,0.9718440771102905,1.054,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+spatial_entropy,RandomLogit,GuidedGradCam,0.8466022610664368,0.364,[],True
+spatial_entropy,RandomLogit,DeepLift,0.9401608109474182,0.013,[],True
+spatial_entropy,RandomLogit,Deconvolution,0.9628099203109741,1.0,"['DeepLift', 'GuidedGradCam']",False
+spatial_entropy,RandomLogit,MarginPullback,0.9632714986801147,0.084,['DeepLift'],False
+spatial_entropy,RandomLogit,Gradient,0.9649373292922974,-0.026,[],True
+spatial_entropy,RandomLogit,Saliency,0.9649373292922974,0.338,"['DeepLift', 'MarginPullback']",False
+spatial_entropy,RandomLogit,DistributionPullback,0.9657719135284424,-0.059,[],True
+spatial_entropy,RandomLogit,SoftPullback,0.9658064842224121,-0.018,"['DistributionPullback', 'Gradient']",False
+spatial_entropy,RandomLogit,DoublePullback,0.9667124152183533,0.006,"['DistributionPullback', 'Gradient', 'SoftPullback']",False
+spatial_entropy,RandomLogit,MarginAscent,0.9710930585861206,0.022,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+spatial_entropy,RandomLogit,PullbackAscent,0.9718440771102905,0.011,"['DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+effective_support,FaithfulnessCorrelation,GuidedGradCam,0.21072866022586823,0.009,[],True
+effective_support,FaithfulnessCorrelation,DeepLift,0.5312194228172302,-0.006,['GuidedGradCam'],False
+effective_support,FaithfulnessCorrelation,Deconvolution,0.6689035296440125,-0.004,['GuidedGradCam'],False
+effective_support,FaithfulnessCorrelation,MarginPullback,0.6777865290641785,0.058,[],True
+effective_support,FaithfulnessCorrelation,Gradient,0.6862553358078003,0.014,['MarginPullback'],False
+effective_support,FaithfulnessCorrelation,Saliency,0.6862553358078003,0.01,['MarginPullback'],False
+effective_support,FaithfulnessCorrelation,DistributionPullback,0.6936228275299072,0.073,[],True
+effective_support,FaithfulnessCorrelation,SoftPullback,0.6942030191421509,0.072,['DistributionPullback'],False
+effective_support,FaithfulnessCorrelation,DoublePullback,0.7008340954780579,0.053,"['DistributionPullback', 'MarginPullback', 'SoftPullback']",False
+effective_support,FaithfulnessCorrelation,MarginAscent,0.7332326173782349,0.038,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+effective_support,FaithfulnessCorrelation,PullbackAscent,0.7388874292373657,0.045,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+effective_support,MonotonicityCorrelation,GuidedGradCam,0.21072866022586823,0.402,[],True
+effective_support,MonotonicityCorrelation,DeepLift,0.5312194228172302,0.305,['GuidedGradCam'],False
+effective_support,MonotonicityCorrelation,Deconvolution,0.6689035296440125,0.216,"['DeepLift', 'GuidedGradCam']",False
+effective_support,MonotonicityCorrelation,MarginPullback,0.6777865290641785,0.226,"['DeepLift', 'GuidedGradCam']",False
+effective_support,MonotonicityCorrelation,Gradient,0.6862553358078003,0.157,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MonotonicityCorrelation,Saliency,0.6862553358078003,0.157,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MonotonicityCorrelation,DistributionPullback,0.6936228275299072,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MonotonicityCorrelation,SoftPullback,0.6942030191421509,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MonotonicityCorrelation,DoublePullback,0.7008340954780579,0.207,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+effective_support,MonotonicityCorrelation,MarginAscent,0.7332326173782349,0.228,"['DeepLift', 'GuidedGradCam']",False
+effective_support,MonotonicityCorrelation,PullbackAscent,0.7388874292373657,0.234,"['DeepLift', 'GuidedGradCam']",False
+effective_support,FaithfulnessEstimate,GuidedGradCam,0.21072866022586823,0.072,[],True
+effective_support,FaithfulnessEstimate,DeepLift,0.5312194228172302,-0.152,['GuidedGradCam'],False
+effective_support,FaithfulnessEstimate,Deconvolution,0.6689035296440125,0.173,[],True
+effective_support,FaithfulnessEstimate,MarginPullback,0.6777865290641785,0.557,[],True
+effective_support,FaithfulnessEstimate,Gradient,0.6862553358078003,0.384,['MarginPullback'],False
+effective_support,FaithfulnessEstimate,Saliency,0.6862553358078003,0.071,"['Deconvolution', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,FaithfulnessEstimate,DistributionPullback,0.6936228275299072,0.281,"['Gradient', 'MarginPullback']",False
+effective_support,FaithfulnessEstimate,SoftPullback,0.6942030191421509,0.515,['MarginPullback'],False
+effective_support,FaithfulnessEstimate,DoublePullback,0.7008340954780579,0.362,"['Gradient', 'MarginPullback', 'SoftPullback']",False
+effective_support,FaithfulnessEstimate,MarginAscent,0.7332326173782349,0.686,[],True
+effective_support,FaithfulnessEstimate,PullbackAscent,0.7388874292373657,0.629,['MarginAscent'],False
+effective_support,MaxSensitivity,GuidedGradCam,0.21072866022586823,0.189,[],True
+effective_support,MaxSensitivity,DeepLift,0.5312194228172302,0.692,['GuidedGradCam'],False
+effective_support,MaxSensitivity,Deconvolution,0.6689035296440125,0.181,[],True
+effective_support,MaxSensitivity,MarginPullback,0.6777865290641785,0.41,"['Deconvolution', 'GuidedGradCam']",False
+effective_support,MaxSensitivity,Gradient,0.6862553358078003,1.03,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MaxSensitivity,Saliency,0.6862553358078003,0.811,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MaxSensitivity,DistributionPullback,0.6936228275299072,0.411,"['Deconvolution', 'GuidedGradCam', 'MarginPullback']",False
+effective_support,MaxSensitivity,SoftPullback,0.6942030191421509,0.401,"['Deconvolution', 'GuidedGradCam']",False
+effective_support,MaxSensitivity,DoublePullback,0.7008340954780579,0.616,"['Deconvolution', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+effective_support,MaxSensitivity,MarginAscent,0.7332326173782349,1.052,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+effective_support,MaxSensitivity,PullbackAscent,0.7388874292373657,1.054,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+effective_support,RandomLogit,GuidedGradCam,0.21072866022586823,0.364,[],True
+effective_support,RandomLogit,DeepLift,0.5312194228172302,0.013,[],True
+effective_support,RandomLogit,Deconvolution,0.6689035296440125,1.0,"['DeepLift', 'GuidedGradCam']",False
+effective_support,RandomLogit,MarginPullback,0.6777865290641785,0.084,['DeepLift'],False
+effective_support,RandomLogit,Gradient,0.6862553358078003,-0.026,[],True
+effective_support,RandomLogit,Saliency,0.6862553358078003,0.338,"['DeepLift', 'MarginPullback']",False
+effective_support,RandomLogit,DistributionPullback,0.6936228275299072,-0.059,[],True
+effective_support,RandomLogit,SoftPullback,0.6942030191421509,-0.018,"['DistributionPullback', 'Gradient']",False
+effective_support,RandomLogit,DoublePullback,0.7008340954780579,0.006,"['DistributionPullback', 'Gradient', 'SoftPullback']",False
+effective_support,RandomLogit,MarginAscent,0.7332326173782349,0.022,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+effective_support,RandomLogit,PullbackAscent,0.7388874292373657,0.011,"['DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+top1pct_mass,FaithfulnessCorrelation,GuidedGradCam,0.239938884973526,0.009,[],True
+top1pct_mass,FaithfulnessCorrelation,DeepLift,0.10754987597465515,-0.006,['GuidedGradCam'],False
+top1pct_mass,FaithfulnessCorrelation,MarginPullback,0.07134881615638733,0.058,[],True
+top1pct_mass,FaithfulnessCorrelation,Saliency,0.070015549659729,0.01,['MarginPullback'],False
+top1pct_mass,FaithfulnessCorrelation,Gradient,0.070015549659729,0.014,['MarginPullback'],False
+top1pct_mass,FaithfulnessCorrelation,DistributionPullback,0.06762947887182236,0.073,[],True
+top1pct_mass,FaithfulnessCorrelation,SoftPullback,0.06761253625154495,0.072,['DistributionPullback'],False
+top1pct_mass,FaithfulnessCorrelation,DoublePullback,0.06735433638095856,0.053,"['DistributionPullback', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,FaithfulnessCorrelation,Deconvolution,0.06074129790067673,-0.004,"['DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top1pct_mass,FaithfulnessCorrelation,MarginAscent,0.05545046553015709,0.038,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,FaithfulnessCorrelation,PullbackAscent,0.05468519404530525,0.045,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,MonotonicityCorrelation,GuidedGradCam,0.239938884973526,0.402,[],True
+top1pct_mass,MonotonicityCorrelation,DeepLift,0.10754987597465515,0.305,['GuidedGradCam'],False
+top1pct_mass,MonotonicityCorrelation,MarginPullback,0.07134881615638733,0.226,"['DeepLift', 'GuidedGradCam']",False
+top1pct_mass,MonotonicityCorrelation,Saliency,0.070015549659729,0.157,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MonotonicityCorrelation,Gradient,0.070015549659729,0.157,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MonotonicityCorrelation,DistributionPullback,0.06762947887182236,0.208,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MonotonicityCorrelation,SoftPullback,0.06761253625154495,0.208,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MonotonicityCorrelation,DoublePullback,0.06735433638095856,0.207,"['DeepLift', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,MonotonicityCorrelation,Deconvolution,0.06074129790067673,0.216,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MonotonicityCorrelation,MarginAscent,0.05545046553015709,0.228,"['DeepLift', 'GuidedGradCam']",False
+top1pct_mass,MonotonicityCorrelation,PullbackAscent,0.05468519404530525,0.234,"['DeepLift', 'GuidedGradCam']",False
+top1pct_mass,FaithfulnessEstimate,GuidedGradCam,0.239938884973526,0.072,[],True
+top1pct_mass,FaithfulnessEstimate,DeepLift,0.10754987597465515,-0.152,['GuidedGradCam'],False
+top1pct_mass,FaithfulnessEstimate,MarginPullback,0.07134881615638733,0.557,[],True
+top1pct_mass,FaithfulnessEstimate,Saliency,0.070015549659729,0.071,"['GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,FaithfulnessEstimate,Gradient,0.070015549659729,0.384,['MarginPullback'],False
+top1pct_mass,FaithfulnessEstimate,DistributionPullback,0.06762947887182236,0.281,"['Gradient', 'MarginPullback']",False
+top1pct_mass,FaithfulnessEstimate,SoftPullback,0.06761253625154495,0.515,['MarginPullback'],False
+top1pct_mass,FaithfulnessEstimate,DoublePullback,0.06735433638095856,0.362,"['Gradient', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,FaithfulnessEstimate,Deconvolution,0.06074129790067673,0.173,"['DistributionPullback', 'DoublePullback', 'Gradient', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,FaithfulnessEstimate,MarginAscent,0.05545046553015709,0.686,[],True
+top1pct_mass,FaithfulnessEstimate,PullbackAscent,0.05468519404530525,0.629,['MarginAscent'],False
+top1pct_mass,MaxSensitivity,GuidedGradCam,0.239938884973526,0.189,[],True
+top1pct_mass,MaxSensitivity,DeepLift,0.10754987597465515,0.692,['GuidedGradCam'],False
+top1pct_mass,MaxSensitivity,MarginPullback,0.07134881615638733,0.41,['GuidedGradCam'],False
+top1pct_mass,MaxSensitivity,Saliency,0.070015549659729,0.811,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MaxSensitivity,Gradient,0.070015549659729,1.03,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MaxSensitivity,DistributionPullback,0.06762947887182236,0.411,"['GuidedGradCam', 'MarginPullback']",False
+top1pct_mass,MaxSensitivity,SoftPullback,0.06761253625154495,0.401,['GuidedGradCam'],False
+top1pct_mass,MaxSensitivity,DoublePullback,0.06735433638095856,0.616,"['DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+top1pct_mass,MaxSensitivity,Deconvolution,0.06074129790067673,0.181,[],True
+top1pct_mass,MaxSensitivity,MarginAscent,0.05545046553015709,1.052,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top1pct_mass,MaxSensitivity,PullbackAscent,0.05468519404530525,1.054,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top1pct_mass,RandomLogit,GuidedGradCam,0.239938884973526,0.364,[],True
+top1pct_mass,RandomLogit,DeepLift,0.10754987597465515,0.013,[],True
+top1pct_mass,RandomLogit,MarginPullback,0.07134881615638733,0.084,['DeepLift'],False
+top1pct_mass,RandomLogit,Saliency,0.070015549659729,0.338,"['DeepLift', 'MarginPullback']",False
+top1pct_mass,RandomLogit,Gradient,0.070015549659729,-0.026,[],True
+top1pct_mass,RandomLogit,DistributionPullback,0.06762947887182236,-0.059,[],True
+top1pct_mass,RandomLogit,SoftPullback,0.06761253625154495,-0.018,"['DistributionPullback', 'Gradient']",False
+top1pct_mass,RandomLogit,DoublePullback,0.06735433638095856,0.006,"['DistributionPullback', 'Gradient', 'SoftPullback']",False
+top1pct_mass,RandomLogit,Deconvolution,0.06074129790067673,1.0,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top1pct_mass,RandomLogit,MarginAscent,0.05545046553015709,0.022,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+top1pct_mass,RandomLogit,PullbackAscent,0.05468519404530525,0.011,"['DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+top5pct_mass,FaithfulnessCorrelation,GuidedGradCam,0.556307315826416,0.009,[],True
+top5pct_mass,FaithfulnessCorrelation,DeepLift,0.2981185019016266,-0.006,['GuidedGradCam'],False
+top5pct_mass,FaithfulnessCorrelation,MarginPullback,0.2200235277414322,0.058,[],True
+top5pct_mass,FaithfulnessCorrelation,Saliency,0.21550628542900085,0.01,['MarginPullback'],False
+top5pct_mass,FaithfulnessCorrelation,Gradient,0.21550628542900085,0.014,['MarginPullback'],False
+top5pct_mass,FaithfulnessCorrelation,DistributionPullback,0.2110520899295807,0.073,[],True
+top5pct_mass,FaithfulnessCorrelation,SoftPullback,0.21098923683166504,0.072,['DistributionPullback'],False
+top5pct_mass,FaithfulnessCorrelation,DoublePullback,0.208094984292984,0.053,"['DistributionPullback', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,FaithfulnessCorrelation,Deconvolution,0.20688799023628235,-0.004,"['DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top5pct_mass,FaithfulnessCorrelation,MarginAscent,0.18744878470897675,0.038,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,FaithfulnessCorrelation,PullbackAscent,0.18520651757717133,0.045,"['DistributionPullback', 'DoublePullback', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,MonotonicityCorrelation,GuidedGradCam,0.556307315826416,0.402,[],True
+top5pct_mass,MonotonicityCorrelation,DeepLift,0.2981185019016266,0.305,['GuidedGradCam'],False
+top5pct_mass,MonotonicityCorrelation,MarginPullback,0.2200235277414322,0.226,"['DeepLift', 'GuidedGradCam']",False
+top5pct_mass,MonotonicityCorrelation,Saliency,0.21550628542900085,0.157,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MonotonicityCorrelation,Gradient,0.21550628542900085,0.157,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MonotonicityCorrelation,DistributionPullback,0.2110520899295807,0.208,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MonotonicityCorrelation,SoftPullback,0.21098923683166504,0.208,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MonotonicityCorrelation,DoublePullback,0.208094984292984,0.207,"['DeepLift', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,MonotonicityCorrelation,Deconvolution,0.20688799023628235,0.216,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MonotonicityCorrelation,MarginAscent,0.18744878470897675,0.228,"['DeepLift', 'GuidedGradCam']",False
+top5pct_mass,MonotonicityCorrelation,PullbackAscent,0.18520651757717133,0.234,"['DeepLift', 'GuidedGradCam']",False
+top5pct_mass,FaithfulnessEstimate,GuidedGradCam,0.556307315826416,0.072,[],True
+top5pct_mass,FaithfulnessEstimate,DeepLift,0.2981185019016266,-0.152,['GuidedGradCam'],False
+top5pct_mass,FaithfulnessEstimate,MarginPullback,0.2200235277414322,0.557,[],True
+top5pct_mass,FaithfulnessEstimate,Saliency,0.21550628542900085,0.071,"['GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,FaithfulnessEstimate,Gradient,0.21550628542900085,0.384,['MarginPullback'],False
+top5pct_mass,FaithfulnessEstimate,DistributionPullback,0.2110520899295807,0.281,"['Gradient', 'MarginPullback']",False
+top5pct_mass,FaithfulnessEstimate,SoftPullback,0.21098923683166504,0.515,['MarginPullback'],False
+top5pct_mass,FaithfulnessEstimate,DoublePullback,0.208094984292984,0.362,"['Gradient', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,FaithfulnessEstimate,Deconvolution,0.20688799023628235,0.173,"['DistributionPullback', 'DoublePullback', 'Gradient', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,FaithfulnessEstimate,MarginAscent,0.18744878470897675,0.686,[],True
+top5pct_mass,FaithfulnessEstimate,PullbackAscent,0.18520651757717133,0.629,['MarginAscent'],False
+top5pct_mass,MaxSensitivity,GuidedGradCam,0.556307315826416,0.189,[],True
+top5pct_mass,MaxSensitivity,DeepLift,0.2981185019016266,0.692,['GuidedGradCam'],False
+top5pct_mass,MaxSensitivity,MarginPullback,0.2200235277414322,0.41,['GuidedGradCam'],False
+top5pct_mass,MaxSensitivity,Saliency,0.21550628542900085,0.811,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MaxSensitivity,Gradient,0.21550628542900085,1.03,"['DeepLift', 'GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MaxSensitivity,DistributionPullback,0.2110520899295807,0.411,"['GuidedGradCam', 'MarginPullback']",False
+top5pct_mass,MaxSensitivity,SoftPullback,0.21098923683166504,0.401,['GuidedGradCam'],False
+top5pct_mass,MaxSensitivity,DoublePullback,0.208094984292984,0.616,"['DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+top5pct_mass,MaxSensitivity,Deconvolution,0.20688799023628235,0.181,[],True
+top5pct_mass,MaxSensitivity,MarginAscent,0.18744878470897675,1.052,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top5pct_mass,MaxSensitivity,PullbackAscent,0.18520651757717133,1.054,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top5pct_mass,RandomLogit,GuidedGradCam,0.556307315826416,0.364,[],True
+top5pct_mass,RandomLogit,DeepLift,0.2981185019016266,0.013,[],True
+top5pct_mass,RandomLogit,MarginPullback,0.2200235277414322,0.084,['DeepLift'],False
+top5pct_mass,RandomLogit,Saliency,0.21550628542900085,0.338,"['DeepLift', 'MarginPullback']",False
+top5pct_mass,RandomLogit,Gradient,0.21550628542900085,-0.026,[],True
+top5pct_mass,RandomLogit,DistributionPullback,0.2110520899295807,-0.059,[],True
+top5pct_mass,RandomLogit,SoftPullback,0.21098923683166504,-0.018,"['DistributionPullback', 'Gradient']",False
+top5pct_mass,RandomLogit,DoublePullback,0.208094984292984,0.006,"['DistributionPullback', 'Gradient', 'SoftPullback']",False
+top5pct_mass,RandomLogit,Deconvolution,0.20688799023628235,1.0,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'GuidedGradCam', 'MarginPullback', 'Saliency', 'SoftPullback']",False
+top5pct_mass,RandomLogit,MarginAscent,0.18744878470897675,0.022,"['DeepLift', 'DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+top5pct_mass,RandomLogit,PullbackAscent,0.18520651757717133,0.011,"['DistributionPullback', 'DoublePullback', 'Gradient', 'SoftPullback']",False
+total_variation,FaithfulnessCorrelation,GuidedGradCam,0.667806088924408,0.009,[],True
+total_variation,FaithfulnessCorrelation,DeepLift,0.6457966566085815,-0.006,['GuidedGradCam'],False
+total_variation,FaithfulnessCorrelation,Gradient,0.5848513841629028,0.014,[],True
+total_variation,FaithfulnessCorrelation,Saliency,0.5848513841629028,0.01,[],True
+total_variation,FaithfulnessCorrelation,PullbackAscent,0.5633595585823059,0.045,[],True
+total_variation,FaithfulnessCorrelation,MarginAscent,0.5630463361740112,0.038,['PullbackAscent'],False
+total_variation,FaithfulnessCorrelation,Deconvolution,0.5458468794822693,-0.004,"['Gradient', 'GuidedGradCam', 'MarginAscent', 'PullbackAscent', 'Saliency']",False
+total_variation,FaithfulnessCorrelation,MarginPullback,0.5386542677879333,0.058,[],True
+total_variation,FaithfulnessCorrelation,SoftPullback,0.5362149477005005,0.072,[],True
+total_variation,FaithfulnessCorrelation,DistributionPullback,0.535366415977478,0.073,[],True
+total_variation,FaithfulnessCorrelation,DoublePullback,0.5316832661628723,0.053,"['DistributionPullback', 'MarginPullback', 'SoftPullback']",False
+total_variation,MonotonicityCorrelation,GuidedGradCam,0.667806088924408,0.402,[],True
+total_variation,MonotonicityCorrelation,DeepLift,0.6457966566085815,0.305,['GuidedGradCam'],False
+total_variation,MonotonicityCorrelation,Gradient,0.5848513841629028,0.157,"['DeepLift', 'GuidedGradCam']",False
+total_variation,MonotonicityCorrelation,Saliency,0.5848513841629028,0.157,"['DeepLift', 'GuidedGradCam']",False
+total_variation,MonotonicityCorrelation,PullbackAscent,0.5633595585823059,0.234,"['DeepLift', 'GuidedGradCam']",False
+total_variation,MonotonicityCorrelation,MarginAscent,0.5630463361740112,0.228,"['DeepLift', 'GuidedGradCam', 'PullbackAscent']",False
+total_variation,MonotonicityCorrelation,Deconvolution,0.5458468794822693,0.216,"['DeepLift', 'GuidedGradCam', 'MarginAscent', 'PullbackAscent']",False
+total_variation,MonotonicityCorrelation,MarginPullback,0.5386542677879333,0.226,"['DeepLift', 'GuidedGradCam', 'MarginAscent', 'PullbackAscent']",False
+total_variation,MonotonicityCorrelation,SoftPullback,0.5362149477005005,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'PullbackAscent']",False
+total_variation,MonotonicityCorrelation,DistributionPullback,0.535366415977478,0.208,"['Deconvolution', 'DeepLift', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'PullbackAscent']",False
+total_variation,MonotonicityCorrelation,DoublePullback,0.5316832661628723,0.207,"['Deconvolution', 'DeepLift', 'DistributionPullback', 'GuidedGradCam', 'MarginAscent', 'MarginPullback', 'PullbackAscent', 'SoftPullback']",False
+total_variation,FaithfulnessEstimate,GuidedGradCam,0.667806088924408,0.072,[],True
+total_variation,FaithfulnessEstimate,DeepLift,0.6457966566085815,-0.152,['GuidedGradCam'],False
+total_variation,FaithfulnessEstimate,Gradient,0.5848513841629028,0.384,[],True
+total_variation,FaithfulnessEstimate,Saliency,0.5848513841629028,0.071,['GuidedGradCam'],False
+total_variation,FaithfulnessEstimate,PullbackAscent,0.5633595585823059,0.629,[],True
+total_variation,FaithfulnessEstimate,MarginAscent,0.5630463361740112,0.686,[],True
+total_variation,FaithfulnessEstimate,Deconvolution,0.5458468794822693,0.173,"['Gradient', 'MarginAscent', 'PullbackAscent']",False
+total_variation,FaithfulnessEstimate,MarginPullback,0.5386542677879333,0.557,"['MarginAscent', 'PullbackAscent']",False
+total_variation,FaithfulnessEstimate,SoftPullback,0.5362149477005005,0.515,"['MarginAscent', 'MarginPullback', 'PullbackAscent']",False
+total_variation,FaithfulnessEstimate,DistributionPullback,0.535366415977478,0.281,"['Gradient', 'MarginAscent', 'MarginPullback', 'PullbackAscent', 'SoftPullback']",False
+total_variation,FaithfulnessEstimate,DoublePullback,0.5316832661628723,0.362,"['Gradient', 'MarginAscent', 'MarginPullback', 'PullbackAscent', 'SoftPullback']",False
+total_variation,MaxSensitivity,GuidedGradCam,0.667806088924408,0.189,[],True
+total_variation,MaxSensitivity,DeepLift,0.6457966566085815,0.692,['GuidedGradCam'],False
+total_variation,MaxSensitivity,Gradient,0.5848513841629028,1.03,"['DeepLift', 'GuidedGradCam']",False
+total_variation,MaxSensitivity,Saliency,0.5848513841629028,0.811,"['DeepLift', 'GuidedGradCam']",False
+total_variation,MaxSensitivity,PullbackAscent,0.5633595585823059,1.054,"['DeepLift', 'Gradient', 'GuidedGradCam', 'Saliency']",False
+total_variation,MaxSensitivity,MarginAscent,0.5630463361740112,1.052,"['DeepLift', 'Gradient', 'GuidedGradCam', 'Saliency']",False
+total_variation,MaxSensitivity,Deconvolution,0.5458468794822693,0.181,[],True
+total_variation,MaxSensitivity,MarginPullback,0.5386542677879333,0.41,"['Deconvolution', 'GuidedGradCam']",False
+total_variation,MaxSensitivity,SoftPullback,0.5362149477005005,0.401,"['Deconvolution', 'GuidedGradCam']",False
+total_variation,MaxSensitivity,DistributionPullback,0.535366415977478,0.411,"['Deconvolution', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+total_variation,MaxSensitivity,DoublePullback,0.5316832661628723,0.616,"['Deconvolution', 'DistributionPullback', 'GuidedGradCam', 'MarginPullback', 'SoftPullback']",False
+total_variation,RandomLogit,GuidedGradCam,0.667806088924408,0.364,[],True
+total_variation,RandomLogit,DeepLift,0.6457966566085815,0.013,[],True
+total_variation,RandomLogit,Gradient,0.5848513841629028,-0.026,[],True
+total_variation,RandomLogit,Saliency,0.5848513841629028,0.338,['DeepLift'],False
+total_variation,RandomLogit,PullbackAscent,0.5633595585823059,0.011,['Gradient'],False
+total_variation,RandomLogit,MarginAscent,0.5630463361740112,0.022,"['DeepLift', 'Gradient', 'PullbackAscent']",False
+total_variation,RandomLogit,Deconvolution,0.5458468794822693,1.0,"['DeepLift', 'Gradient', 'GuidedGradCam', 'MarginAscent', 'PullbackAscent', 'Saliency']",False
+total_variation,RandomLogit,MarginPullback,0.5386542677879333,0.084,"['DeepLift', 'Gradient', 'MarginAscent', 'PullbackAscent']",False
+total_variation,RandomLogit,SoftPullback,0.5362149477005005,-0.018,['Gradient'],False
+total_variation,RandomLogit,DistributionPullback,0.535366415977478,-0.059,[],True
+total_variation,RandomLogit,DoublePullback,0.5316832661628723,0.006,"['DistributionPullback', 'Gradient', 'SoftPullback']",False
