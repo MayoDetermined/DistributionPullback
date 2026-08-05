@@ -8,13 +8,13 @@ One idea per notebook: the construction, what breaks if you do it naively, one
 figure, the headline number, the catch. +- 16 cells, couple of minutes on CPU.
 They're saved with outputs, so you can just read them.
 
-* [`MVP_1_Fisher_Rao_Selector`](notebooks/Fisher_Rao_Selector.ipynb):
+* [`Fisher_Rao_Selector`](notebooks/Fisher_Rao_Selector.ipynb):
   the logits parameterise a distribution, so re-express `e_c` in the Fisher-Rao
   metric before pulling it back
-* [`MVP_2_Margin_Ascent`](notebooks/Margin_Ascent.ipynb): explain the
+* [`Margin_Ascent`](notebooks/Margin_Ascent.ipynb): explain the
   target *against its current rivals*, with a selector that turns out to be the
   gradient of a smooth top-k margin
-* [`MVP_3_Entropy_Flow`](notebooks/Entropy_Flow.ipynb): the soft
+* [`Entropy_Flow`](notebooks/Entropy_Flow.ipynb): the soft
   adjoint's gates are distributions; pull back their **entropy** instead of a
   class score
 
