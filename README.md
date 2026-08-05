@@ -18,9 +18,6 @@ They're saved with outputs, so you can just read them.
   adjoint's gates are distributions; pull back their **entropy** instead of a
   class score
 
-If you only have ten minutes, read [`docs/FINDINGS.md`](docs/FINDINGS.md), the
-results summary. `docs/DESIGN_NOTES.md` is the long argument.
-
 ## What actually changes
 
 The paper explains class `c` by pulling `u = e_c` back through a softened
@@ -61,7 +58,7 @@ loadable.
 
 ```bash
 pip install -r requirements.txt
-python setup_data.py          # Imagenette-320, ~342 MB, into ./data
+python setup_data.py          # Imagenette-320, ok 342 MB, into ./data
 jupyter lab notebooks/
 ```
 
@@ -94,20 +91,17 @@ results/       n = 200 tables, ablation sweeps, unification, sharpness
 ## Where things stand
 
 Fisher-Rao Selector and Margin Ascent are benchmarked at n = 200 on ResNet-50
-in the paper's metric regime. Entropy-Flow has method, code and tests but **no
-Quantus numbers yet**. `docs/FINDINGS.md` §7 explains why the first run to do is
-`ClassEntropyFlow` and not `EntropyFlow`. The explanation attacks are
+in the paper's metric regime. Entropy-Flow has method, code and tests but !!! **no
+Quantus numbers yet**. The explanation attacks are
 implemented and unit-tested, not yet run at a sample size worth quoting.
 
 ## About this copy
 
-This folder was put together after the drive holding the main repo became
-unavailable, so a few things are worth flagging before you lean on it:
+!!! This folder was put together after the drive holding the main repo became
+unavailable (i lost usb cable during backpacking), so a few things are worth flagging before you lean on it:
 
-* `results/summary_n200_paper.csv` and `results/ablations/*.csv` were rebuilt
-  from the markdown tables in `results/RESULTS.md`. Means and standard
-  deviations are the original numbers; the `median` column isn't in RESULTS.md
-  and comes back as `NaN`. Nothing here uses it.
+* `results/summary_n200_paper.csv` and `results/ablations/*.csv` were rebuilt. Means and standard
+  deviations are the original numbers; the `median` column comes back as `NaN`. Nothing here uses it.
 * `results/raw/*.json` (the per-sample scores) aren't here. That's the input to
   `scripts/10_metric_unification.py`, so that script can't be re-run from this
   folder. Its output is included as
