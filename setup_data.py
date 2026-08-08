@@ -3,12 +3,12 @@
 
     python setup_data.py
 
-Downloads Imagenette-320 (~342 MB) into ./data and extracts it. Imagenette is a
+Downloads Imagenette-320 into ./data and extracts it. Imagenette is a
 10-class subset of ImageNet-1k; the labels used here are the *ImageNet* indices
 of those ten classes, so the pretrained 1000-way heads are used unchanged.
 
 ResNet-50 weights come from torchvision on first use and are cached in the
-usual torch hub directory -- nothing to do for those.
+usual torch hub directory nothing to do for those.
 
 Skips work that is already done, so it is safe to re-run.
 """
