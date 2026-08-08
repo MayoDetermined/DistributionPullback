@@ -1,7 +1,7 @@
 """Do the six explanation-quality metrics measure six things, or fewer?
 
 results/raw/*.json keeps the per-sample score of every metric for every method,
-which is more than the published tables use -- they collapse each cell to
+which is more than the published tables use they collapse each cell to
 mean +/- std. With the per-sample scores there are three separable questions,
 and they get different answers:
 
